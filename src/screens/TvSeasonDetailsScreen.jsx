@@ -10,7 +10,7 @@ import {
 import Loader from "../components/Loader.jsx";
 import { SlCalender } from "react-icons/sl";
 import defaultDP from "../assets/defaultDP.png";
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
 import { IoMdTimer } from "react-icons/io";
 
 const TvSeasonDetails = () => {

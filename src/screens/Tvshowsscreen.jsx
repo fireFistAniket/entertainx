@@ -41,7 +41,7 @@ const Tvshowsscreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/tv/airing_today"
+            to="/entertainx/all/tv/airing_today"
             onClick={() => {
               getSearchQuery("TV", "Airing Today");
             }}
@@ -56,13 +56,12 @@ const Tvshowsscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/tv-shows"
-                          ? "tv"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("tv-show") === true
+                      ? "tv"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -75,7 +74,7 @@ const Tvshowsscreen = () => {
                     className="w-40 sm:w-60"
                   />
                   <p className="text-sm sm:text-lg capitalize absolute bottom-0 bg-[#ffffffbf] w-full py-2 text-center font-medium dark:bg-[#29282883] dark:[text-shadow:_0_4px_5px_rgb(0_0_0_/_65%)] dark:backdrop-blur-[3px]">
-                    {data.original_title || data.name}
+                    {data.title || data.name}
                   </p>
                 </Link>
               );
@@ -89,7 +88,7 @@ const Tvshowsscreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/tv/on_the_air"
+            to="/entertainx/all/tv/on_the_air"
             onClick={() => {
               getSearchQuery("TV", "Airing This Week");
             }}
@@ -104,13 +103,12 @@ const Tvshowsscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/tv-shows"
-                          ? "tv"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("/tv-show") === true
+                      ? "tv"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -123,7 +121,7 @@ const Tvshowsscreen = () => {
                     className="w-40 sm:w-60"
                   />
                   <p className="text-sm sm:text-lg capitalize absolute bottom-0 bg-[#ffffffbf] w-full py-2 text-center font-medium dark:bg-[#29282883] dark:[text-shadow:_0_4px_5px_rgb(0_0_0_/_65%)] dark:backdrop-blur-[3px]">
-                    {data.original_title || data.name}
+                    {data.title || data.name}
                   </p>
                 </Link>
               );
@@ -137,7 +135,7 @@ const Tvshowsscreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/tv/popular"
+            to="/entertainx/all/tv/popular"
             onClick={() => {
               getSearchQuery("TV", "Popular Shows");
             }}
@@ -152,13 +150,12 @@ const Tvshowsscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/tv-shows"
-                          ? "tv"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("tv-show") === true
+                      ? "tv"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -185,7 +182,7 @@ const Tvshowsscreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/tv/top_rated"
+            to="/entertainx/all/tv/top_rated"
             onClick={() => {
               getSearchQuery("TV", "Top Rated Shows");
             }}
@@ -200,13 +197,12 @@ const Tvshowsscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/tv-shows"
-                          ? "tv"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("tv-show") === true
+                      ? "tv"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -219,7 +215,7 @@ const Tvshowsscreen = () => {
                     className="w-40 sm:w-60"
                   />
                   <p className="text-sm sm:text-lg capitalize absolute bottom-0 bg-[#ffffffbf] w-full py-2 text-center font-medium dark:bg-[#29282883] dark:[text-shadow:_0_4px_5px_rgb(0_0_0_/_65%)] dark:backdrop-blur-[3px]">
-                    {data.original_title || data.name}
+                    {data.title || data.name}
                   </p>
                 </Link>
               );

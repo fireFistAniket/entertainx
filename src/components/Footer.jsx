@@ -94,13 +94,13 @@ const Footer = () => {
           <h3 className="capitalize text-xl">useful links</h3>
           <ul className="flex flex-wrap sm:block gap-2">
             <li className="capitalize">
-              <Link to="/">home</Link>
+              <Link to="/entertainx/">home</Link>
             </li>
             <li className="capitalize">
-              <Link to="/movies">movies</Link>
+              <Link to="/entertainx/movies">movies</Link>
             </li>
             <li className="capitalize">
-              <Link to="/tv-shows">tv shows</Link>
+              <Link to="/entertainx/tv-shows">tv shows</Link>
             </li>
           </ul>
         </div>
@@ -111,7 +111,7 @@ const Footer = () => {
               return (
                 <li className="capitalize" key={index}>
                   <Link
-                    to={`/genre/${"movie"}/${elm.id}`}
+                    to={`/entertainx/genre/${"movie"}/${elm.id}`}
                     onClick={() => {
                       getSearchQuery("Movies", `${elm.name}`);
                     }}
@@ -130,7 +130,7 @@ const Footer = () => {
               return (
                 <li className="capitalize" key={index}>
                   <Link
-                    to={`/genre/${"tv"}/${elm.id}`}
+                    to={`/entertainx/genre/${"tv"}/${elm.id}`}
                     onClick={() => {
                       getSearchQuery("TV Shows", `${elm.name}`);
                     }}

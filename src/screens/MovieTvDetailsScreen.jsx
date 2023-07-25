@@ -358,7 +358,7 @@ const MovieTvDetailsScreen = () => {
                   {collection.parts &&
                     collection.parts.map((item, index) => (
                       <Link
-                        to={`/details/${item.media_type}/${item.id}`}
+                        to={`/entertainx/details/${item.media_type}/${item.id}`}
                         key={index}
                         className="flex flex-col relative"
                       >
@@ -407,7 +407,7 @@ const MovieTvDetailsScreen = () => {
                 {pageData.seasons &&
                   pageData.seasons.map((item, index) => (
                     <Link
-                      to={`/details/season/${id}/${item.season_number}`}
+                      to={`/entertainx/details/season/${id}/${item.season_number}`}
                       key={index}
                       className="flex flex-col relative"
                     >
@@ -463,7 +463,7 @@ const MovieTvDetailsScreen = () => {
                             <Link
                               key={index}
                               className="w-[25vw] sm:w-auto"
-                              to={`/details/person/${item.id}`}
+                              to={`/entertainx/details/person/${item.id}`}
                             >
                               <img
                                 src={
@@ -490,7 +490,7 @@ const MovieTvDetailsScreen = () => {
                             <Link
                               key={index}
                               className="w-[25vw] sm:w-auto"
-                              to={`/details/person/${item.id}`}
+                              to={`/entertainx/details/person/${item.id}`}
                             >
                               <img
                                 src={
@@ -545,7 +545,7 @@ const MovieTvDetailsScreen = () => {
                             <Link
                               key={index}
                               className="w-[25vw] sm:w-auto"
-                              to={`/details/person/${item.id}`}
+                              to={`/entertainx/details/person/${item.id}`}
                             >
                               <img
                                 src={
@@ -572,7 +572,7 @@ const MovieTvDetailsScreen = () => {
                             <Link
                               key={index}
                               className="w-[25vw] sm:w-auto"
-                              to={`/details/person/${item.id}`}
+                              to={`/entertainx/details/person/${item.id}`}
                             >
                               <img
                                 src={
@@ -675,7 +675,7 @@ const MovieTvDetailsScreen = () => {
                 </h2>
                 <Link
                   className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-                  to={`/all/similar/${id}`}
+                  to={`/entertainx/all/similar/${id}`}
                   onClick={() => {
                     getSearchQuery(
                       pageData.name || pageData.original_title,
@@ -693,7 +693,7 @@ const MovieTvDetailsScreen = () => {
                       <Link
                         className="relative popularCards"
                         key={index}
-                        to={`/details/${mediaType}/${data.id}`}
+                        to={`/entertainx/details/${mediaType}/${data.id}`}
                       >
                         <img
                           src={

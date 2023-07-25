@@ -93,7 +93,7 @@ const Hero = ({ type }) => {
                 <div className="border-[1px] w-fit px-2 py-1 sm:px-4 sm:py-2 rounded-xl">
                   <Link
                     className="flex items-center gap-[3px] capitalize text-sm sm:text-lg"
-                    to={`/details/${elem.media_type}/${elem.id}`}
+                    to={`/entertainx/details/${elem.media_type}/${elem.id}`}
                   >
                     know more{" "}
                     <LuMoreHorizontal size="1.5em" className="text-xs" />

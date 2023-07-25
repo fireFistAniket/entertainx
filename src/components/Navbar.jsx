@@ -93,7 +93,7 @@ const Navbar = () => {
         <div>
           <h3 className="text-3xl font-bold">
             <Link
-              to="entertainx/"
+              to="/entertainx/"
               className="text-[#99A4AA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] flex items-center gap-[3px]"
             >
               EntertainX <RiMovie2Fill />
@@ -104,7 +104,7 @@ const Navbar = () => {
           <ul className="flex items-center">
             <li className="capitalize hover:font-bold">
               <NavLink
-                to="entertainx/"
+                to="/entertainx/"
                 className="text-[#B1B7BA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)]"
               >
                 home
@@ -112,7 +112,7 @@ const Navbar = () => {
             </li>
             <li className="capitalize ml-4 hover:font-bold">
               <NavLink
-                to="/movies"
+                to="/entertainx/movies"
                 className="text-[#B1B7BA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)]"
               >
                 movies
@@ -120,7 +120,7 @@ const Navbar = () => {
             </li>
             <li className="capitalize ml-4 hover:font-bold">
               <NavLink
-                to="/tv-shows"
+                to="/entertainx/tv-shows"
                 className="text-[#B1B7BA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)]"
               >
                 tv shows
@@ -132,7 +132,7 @@ const Navbar = () => {
               <ul className="hidden absolute top-full group-hover:flex flex-col w-full">
                 <li className="capitalize hover:font-bold whitespace-nowrap">
                   <Link
-                    to="/all/movie/popular"
+                    to="/entertainx/all/movie/popular"
                     onClick={() => {
                       getSearchQuery("Movies", "Popular");
                     }}
@@ -142,7 +142,7 @@ const Navbar = () => {
                 </li>
                 <li className="capitalize hover:font-bold whitespace-nowrap">
                   <Link
-                    to="/all/tv/popular"
+                    to="/entertainx/all/tv/popular"
                     onClick={() => {
                       getSearchQuery("TV", "Popular");
                     }}
@@ -160,7 +160,7 @@ const Navbar = () => {
               className="flex items-center border-b-[1px] gap-[8px] border-[#B1B7BA] mx-2 my-1 py-1 px-2"
               onSubmit={(e) => {
                 e.preventDefault();
-                navigate(`/search/${searchQury}`);
+                navigate(`/entertainx/search/${searchQury}`);
               }}
             >
               <BsSearch className="text-[#B1B7BA] drop-shadow-lg" />
@@ -181,7 +181,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     className="flex w-full items-center gap-[8px] bg-[#00000055] px-2 py-1 border-b-[1px] border-dashed border-gray-600 dark:bg-[#ffffffc4]"
-                    to={`/details/${item.media_type}/${item.id}`}
+                    to={`/entertainx/details/${item.media_type}/${item.id}`}
                   >
                     <div>
                       <img
@@ -234,7 +234,7 @@ const Navbar = () => {
           </button>
           <h3 className="text-2xl font-bold">
             <Link
-              to="entertainx/"
+              to="/entertainx/"
               className="text-[#99A4AA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] flex items-center gap-[3px]"
             >
               EntertainX <RiMovie2Fill />
@@ -255,7 +255,7 @@ const Navbar = () => {
           <ul className="flex items-center justify-center flex-col h-full w-full">
             <li className="capitalize hover:font-bold">
               <NavLink
-                to="entertainx/"
+                to="/entertainx/"
                 className="dark:text-[#B1B7BA] text-[#000] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] text-2xl"
               >
                 home
@@ -263,7 +263,7 @@ const Navbar = () => {
             </li>
             <li className="capitalize hover:font-bold">
               <NavLink
-                to="/movies"
+                to="/entertainx/movies"
                 className="dark:text-[#B1B7BA] text-[#000] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] text-2xl"
               >
                 movies
@@ -271,7 +271,7 @@ const Navbar = () => {
             </li>
             <li className="capitalize hover:font-bold">
               <NavLink
-                to="/tv-shows"
+                to="/entertainx/tv-shows"
                 className="dark:text-[#B1B7BA] text-[#000] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] text-2xl"
               >
                 tv shows
@@ -283,7 +283,7 @@ const Navbar = () => {
               <ul className="hidden absolute top-full group-hover:flex flex-col w-full">
                 <li className="capitalize hover:font-bold whitespace-nowrap">
                   <Link
-                    to="/all/movie/popular"
+                    to="/entertainx/all/movie/popular"
                     onClick={() => {
                       getSearchQuery("Movies", "Popular");
                     }}
@@ -293,7 +293,7 @@ const Navbar = () => {
                 </li>
                 <li className="capitalize hover:font-bold whitespace-nowrap">
                   <Link
-                    to="/all/tv/popular"
+                    to="/entertainx/all/tv/popular"
                     onClick={() => {
                       getSearchQuery("TV", "Popular");
                     }}
@@ -346,7 +346,7 @@ const Navbar = () => {
                     <Link
                       key={index}
                       className="flex w-full items-center gap-[8px] bg-[#00000055] px-2 py-1 border-b-[1px] border-dashed border-gray-600 dark:bg-[#ffffffc4]"
-                      to={`/details/${item.media_type}/${item.id}`}
+                      to={`/entertainx/details/${item.media_type}/${item.id}`}
                     >
                       <div>
                         <img

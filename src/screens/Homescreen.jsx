@@ -54,7 +54,7 @@ const Homescreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/trending/all/week"
+            to="/entertainx/all/trending/all/week"
             onClick={() => {
               getSearchQuery("All", "Trending");
             }}
@@ -72,7 +72,7 @@ const Homescreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${data.media_type}/${data.id}`}
+                  to={`/entertainx/details/${data.media_type}/${data.id}`}
                 >
                   <img
                     src={
@@ -99,7 +99,7 @@ const Homescreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/trending/person/week"
+            to="/entertainx/all/trending/person/week"
             onClick={() => {
               getSearchQuery("Persons", "Trending");
             }}
@@ -118,7 +118,7 @@ const Homescreen = () => {
                   <Link
                     className="relative popularCards"
                     key={index}
-                    to={`/details/person/${data.id}`}
+                    to={`/entertainx/details/person/${data.id}`}
                   >
                     <img
                       src={

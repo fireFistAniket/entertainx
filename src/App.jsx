@@ -20,34 +20,34 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="entertainx/" element={<Homescreen />} />
-        <Route path="/movies" element={<Moviesscreen />} />
-        <Route path="/tv-shows" element={<Tvshowsscreen />} />
+        <Route path="/entertainx/" element={<Homescreen />} />
+        <Route path="/entertainx/movies" element={<Moviesscreen />} />
+        <Route path="/entertainx/tv-shows" element={<Tvshowsscreen />} />
         <Route
-          path="/all/:type/:filter/:sub?"
+          path="/entertainx/all/:type/:filter/:sub?"
           element={<SearchResultScreen />}
         />
-        <Route path="/all/similar/:movieId" element={<SearchResultScreen />} />
-        <Route path="/genre/:type/:genre" element={<SearchResultScreen />} />
-        <Route path="/search/:query" element={<SearchResultScreen />} />
+        <Route path="/entertainx/all/similar/:movieId" element={<SearchResultScreen />} />
+        <Route path="/entertainx/genre/:type/:genre" element={<SearchResultScreen />} />
+        <Route path="/entertainx/search/:query" element={<SearchResultScreen />} />
         <Route
-          path="/search/person-movie/:personId"
-          element={<SearchResultScreen />}
-        />
-        <Route
-          path="/search/person-tvshows/:personId"
+          path="/entertainx/search/person-movie/:personId"
           element={<SearchResultScreen />}
         />
         <Route
-          path="/details/:mediaType/:id"
+          path="/entertainx/search/person-tvshows/:personId"
+          element={<SearchResultScreen />}
+        />
+        <Route
+          path="/entertainx/details/:mediaType/:id"
           element={<MovieTvDetailsScreen />}
         />
         <Route
-          path="/details/season/:id/:seasonNumber"
+          path="/entertainx/details/season/:id/:seasonNumber"
           element={<TvSeasonDetails />}
         />
         <Route
-          path="/details/person/:peopleId"
+          path="/entertainx/details/person/:peopleId"
           element={<PeopleDetailsScreen />}
         />
       </Routes>

@@ -187,7 +187,7 @@ const PeopleDetailsScreen = () => {
                 </h1>
                 <Link
                   className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-                  to={`/search/person-movie/${peopleId}`}
+                  to={`/entertainx/search/person-movie/${peopleId}`}
                   onClick={() => {
                     getSearchQuery("Movies", pageData.name);
                   }}
@@ -202,7 +202,7 @@ const PeopleDetailsScreen = () => {
                       <Link
                         className="relative popularCards"
                         key={index}
-                        to={`/details/movie/${data.id}`}
+                        to={`/entertainx/details/movie/${data.id}`}
                       >
                         <img
                           src={
@@ -230,7 +230,7 @@ const PeopleDetailsScreen = () => {
                 </h1>
                 <Link
                   className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-                  to={`/search/person-tvshows/${peopleId}`}
+                  to={`/entertainx/search/person-tvshows/${peopleId}`}
                   onClick={() => {
                     getSearchQuery("TV Shows", pageData.name);
                   }}
@@ -245,7 +245,7 @@ const PeopleDetailsScreen = () => {
                       <Link
                         className="relative popularCards"
                         key={index}
-                        to={`/details/tv/${data.id}`}
+                        to={`/entertainx/details/tv/${data.id}`}
                       >
                         <img
                           src={

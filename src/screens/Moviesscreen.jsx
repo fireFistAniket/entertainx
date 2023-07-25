@@ -45,7 +45,7 @@ const Moviesscreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/movie/popular"
+            to="/entertainx/all/movie/popular"
             onClick={() => {
               getSearchQuery("Movies", "Popular");
             }}
@@ -63,13 +63,12 @@ const Moviesscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/movies"
-                          ? "movie"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("movies") === true
+                      ? "movie"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -82,7 +81,7 @@ const Moviesscreen = () => {
                     className="w-40 sm:w-60"
                   />
                   <p className="text-sm sm:text-lg capitalize absolute bottom-0 bg-[#ffffffbf] w-full py-2 text-center font-medium dark:bg-[#29282883] dark:[text-shadow:_0_4px_5px_rgb(0_0_0_/_65%)] dark:backdrop-blur-[3px]">
-                    {data.original_title || data.name}
+                  {data.name || data.title}
                   </p>
                 </Link>
               );
@@ -97,7 +96,7 @@ const Moviesscreen = () => {
           </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/movie/top_rated"
+            to="/entertainx/all/movie/top_rated"
             onClick={() => {
               getSearchQuery("Movies", "Top Rated");
             }}
@@ -115,13 +114,12 @@ const Moviesscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/movies"
-                          ? "movie"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("movies") === true
+                      ? "movie"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -134,7 +132,7 @@ const Moviesscreen = () => {
                     className="w-40 sm:w-60"
                   />
                   <p className="text-sm sm:text-lg capitalize absolute bottom-0 bg-[#ffffffbf] w-full py-2 text-center font-medium dark:bg-[#29282883] dark:[text-shadow:_0_4px_5px_rgb(0_0_0_/_65%)] dark:backdrop-blur-[3px]">
-                    {data.original_title || data.name}
+                  {data.name || data.title}
                   </p>
                 </Link>
               );
@@ -144,10 +142,12 @@ const Moviesscreen = () => {
       </section>
       <section className="flex flex-col gap-6 mx-4 my-2 sm:my-4 sm:mx-12">
         <div className="flex justify-between">
-          <h2 className="text-lg sm:text-4xl capitalize font-semibold">upcoming movies</h2>
+          <h2 className="text-lg sm:text-4xl capitalize font-semibold">
+            upcoming movies
+          </h2>
           <Link
             className="border-black border-[2px] border-solid flex items-center gap-[5px] px-2 py-1 rounded-xl capitalize dark:border-white text-xs whitespace-nowrap sm:text-base"
-            to="/all/movie/upcoming"
+            to="/entertainx/all/movie/upcoming"
             onClick={() => {
               getSearchQuery("Movies", "Upcoming");
             }}
@@ -165,13 +165,12 @@ const Moviesscreen = () => {
                 <Link
                   className="relative popularCards"
                   key={index}
-                  to={`/details/${
+                  to={`/entertainx/details/${
                     data.media_type
                       ? data.media_type
-                      : (location.pathname === "/movies"
-                          ? "movie"
-                          : null
-                        )?.replace("/", "")
+                      : location.pathname.includes("movies") === true
+                      ? "movie"
+                      : null
                   }/${data.id}`}
                 >
                   <img
@@ -184,7 +183,7 @@ const Moviesscreen = () => {
                     className="w-40 sm:w-60"
                   />
                   <p className="text-sm sm:text-lg capitalize absolute bottom-0 bg-[#ffffffbf] w-full py-2 text-center font-medium dark:bg-[#29282883] dark:[text-shadow:_0_4px_5px_rgb(0_0_0_/_65%)] dark:backdrop-blur-[3px]">
-                    {data.original_title || data.name}
+                    {data.name || data.title}
                   </p>
                 </Link>
               );

@@ -124,7 +124,7 @@ const SearchResultScreen = () => {
                     <Link
                       className="relative cursor-pointer h-full resultsCards"
                       key={index}
-                      to={`/details/${
+                      to={`/entertainx/details/${
                         elem.media_type ||
                         detailsQuery ||
                         (location.pathname.includes("person-tvshows")
