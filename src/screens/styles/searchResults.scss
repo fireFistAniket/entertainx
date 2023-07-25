@@ -1,0 +1,14 @@
+.mainSearchContainer {
+  @media (min-width: 640px) {
+    .resultsCards {
+      & > div:nth-child(2) {
+        display: none;
+      }
+      &:hover {
+        & > div:nth-child(2) {
+          display: flex;
+        }
+      }
+    }
+  }
+}

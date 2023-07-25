@@ -1,0 +1,14 @@
+.hoverHide {
+  @media (min-width: 640px) {
+    & > a {
+      & > div:nth-child(2) {
+        display: none;
+      }
+      &:hover {
+        & > div:nth-child(2) {
+          display: flex;
+        }
+      }
+    }
+  }
+}

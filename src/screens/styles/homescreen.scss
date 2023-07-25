@@ -1,0 +1,38 @@
+.popularCards {
+  @media (min-width: 640px) {
+    & > p {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 5s, visibility 5s;
+    }
+    &:hover {
+      & > p {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+.productionCompanies {
+  animation: marquee 15s linear 0s infinite;
+  & > img {
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
