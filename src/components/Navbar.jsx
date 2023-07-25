@@ -93,7 +93,7 @@ const Navbar = () => {
         <div>
           <h3 className="text-3xl font-bold">
             <Link
-              to="/"
+              to="entertainx/"
               className="text-[#99A4AA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] flex items-center gap-[3px]"
             >
               EntertainX <RiMovie2Fill />
@@ -104,7 +104,7 @@ const Navbar = () => {
           <ul className="flex items-center">
             <li className="capitalize hover:font-bold">
               <NavLink
-                to="/"
+                to="entertainx/"
                 className="text-[#B1B7BA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)]"
               >
                 home
@@ -234,7 +234,7 @@ const Navbar = () => {
           </button>
           <h3 className="text-2xl font-bold">
             <Link
-              to="/"
+              to="entertainx/"
               className="text-[#99A4AA] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] flex items-center gap-[3px]"
             >
               EntertainX <RiMovie2Fill />
@@ -255,7 +255,7 @@ const Navbar = () => {
           <ul className="flex items-center justify-center flex-col h-full w-full">
             <li className="capitalize hover:font-bold">
               <NavLink
-                to="/"
+                to="entertainx/"
                 className="dark:text-[#B1B7BA] text-[#000] [text-shadow:_0_2px_3px_rgb(0_0_0_/_65%)] text-2xl"
               >
                 home
